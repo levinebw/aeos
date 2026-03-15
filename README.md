@@ -28,10 +28,11 @@ AEOS is the business's constitution. It defines **what the business is trying to
 | Service Agents *tbd* | Persistent | Execute specific Services and SOPs indepentent of an Archie session |
 
 
-## Files
+## Documents
 
-- `AEOS.md` — AEOS system specification and design
-- `AEOS-TEMPLATE.md` — Blank AEOS template for a new enterprise
+**[→ Read AEOS.md](https://github.com/levinebw/aeos/blob/main/AEOS.md)** — the full system specification: the algorithm, the stack, operating rules, escalation triggers, and open problems.
+
+**[→ AEOS-TEMPLATE.md](https://github.com/levinebw/aeos/blob/main/AEOS-TEMPLATE.md)** — blank template to instantiate AEOS for your own enterprise.
 
 ## Execution Engine
 
