@@ -25,10 +25,12 @@ AEOS is the business's constitution. It defines **what the business is trying to
 | COO Agent | Persistent | Always-on operator running The Algorithm |
 | Archie Sessions | Ephemeral | Scrum master for a specific initiative |
 | Specialist Agents | Ephemeral | Execute specific tasks within an Archie session |
+| Service Agents *tbd* | Persistent | Execute specific Services and SOPs indepentent of an Archie session |
+
 
 ## Files
 
-- `aeos.md` — AEOS system specification and design
+- `AEOS.md` — AEOS system specification and design
 - `AEOS-TEMPLATE.md` — Blank AEOS template for a new enterprise
 
 ## Execution Engine

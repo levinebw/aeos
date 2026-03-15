@@ -16,7 +16,7 @@ The ideal state criteria ARE the verification criteria. Every initiative, every 
 ## The Algorithm
 
 ```
-┌─────────────────────────────────────────────────────┐
+┌──────────────────────────────────────────────────────┐
 │                   THE ALGORITHM                      │
 │                                                      │
 │   1. DEFINE IDEAL STATE                              │
@@ -24,7 +24,7 @@ The ideal state criteria ARE the verification criteria. Every initiative, every 
 │      Discrete, verifiable yes/no criteria.           │
 │                                                      │
 │   2. ASSESS CURRENT STATE                            │
-│      Honest snapshot of reality right now.            │
+│      Honest snapshot of reality right now            │
 │      Updated by the COO continuously.                │
 │                                                      │
 │   3. CONTINUOUS MIGRATION                            │
@@ -35,7 +35,7 @@ The ideal state criteria ARE the verification criteria. Every initiative, every 
 │                                                      │
 │   This works at every scale:                         │
 │   a solo business, a team, a family, a civilization. │
-└─────────────────────────────────────────────────────┘
+└──────────────────────────────────────────────────────┘
 ```
 
 This algorithm is the COO Agent's core loop. It runs continuously. It is the heartbeat of the enterprise.
@@ -47,7 +47,7 @@ This algorithm is the COO Agent's core loop. It runs continuously. It is the hea
 ```
 CEO (Human)
 │
-│  Sets vision, approves strategy, handles human-required tasks.
+│  Sets vision, approves strategy, handles/delegates human-required tasks.
 │  Intervenes when the system escalates or when strategic pivots are needed.
 │
 ▼
@@ -70,7 +70,7 @@ COO Agent (Persistent)
 │    1. Read AEOS ideal state
 │    2. Assess current state
 │    3. Identify largest gaps
-│    4. Spawn Archie sessions to close them
+│    4. Spawn Archie (ARCH) sessions to close them
 │    5. Monitor KPIs to verify progress
 │    6. Report to CEO at defined intervals
 │    7. Escalate decisions that exceed authority
@@ -96,7 +96,8 @@ Archie Sessions (Ephemeral)
 Specialist Agents (Task Workers)
 │
 │  Execute specific work within an Archie session.
-│  Each has a persona (CLAUDE.md) and skills (SKILLS.md).
+|  Execute SOPs.
+│  Each has a persona (CLAUDE.md|AGENT.md) and skills (SKILLS.md).
 │  Work in isolated git worktrees. Communicate via MCP.
 │  Report to Archie. Do not persist beyond the session.
 ```
@@ -165,10 +166,12 @@ AEOS is the strategy. ARCH is the runtime.
 
 ---
 
-## Open Problems
+## Open Problems / Future Development
 
 These topics are central to a complete implementation of AEOS and require further definition.
 
 **The Operational Graph.** The COO doesn't run The Algorithm in the abstract — it operates against a living map of all the company's work: every SOP, workflow, tool, decision point, and agent role. This graph is the substrate that makes gap analysis concrete and auditable. How this graph is represented, maintained, and traversed is an open design question.
 
 **Current State Data Sources.** The COO's current state assessment is only as good as the data feeding it. What constitutes "unified entity context"? What inputs — financial ledger, KPI dashboards, agent output logs, customer signals, SOP health — are required, and how are they kept current? This is the infrastructure layer beneath The Algorithm.
+
+**Persistent Service Agents** Agents may run continuously 'as services' to process requests whenever they appear. They are not "ephemeral" Agents called by Archie. They may be built buy Archie, but run continuously / independently from an ARCH project. 
