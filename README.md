@@ -31,6 +31,10 @@ AEOS is the business's constitution. It defines **what the business is trying to
 - `aeos.md` — AEOS system specification and design
 - `AEOS-TEMPLATE.md` — Blank AEOS template for a new enterprise
 
+## Execution Engine
+
+AEOS is the strategy. **[ARCH](https://github.com/levinebw/arch)** is the runtime that executes it — a multi-agent system that spawns Archie and specialist agents to close the gaps AEOS identifies.
+
 ---
 
 ## Intellectual Lineage
