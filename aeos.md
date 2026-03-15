@@ -141,3 +141,15 @@ Specialist Agents (Task Workers)
 - **Not ARCH.** ARCH is the execution engine. AEOS is the strategic layer that tells ARCH what to execute.
 - **Not static.** It evolves as the business learns. Ideal state criteria get refined, priorities shift, new criteria are added.
 - **Not a replacement for the CEO.** The CEO sets vision and makes final calls. AEOS encodes those decisions so the system can act on them without asking every time.
+- **Not a static org chart.** The business is a dynamic graph of operations, not a fixed hierarchy. The people and agents doing the work change; the work itself — the SOPs, workflows, decision points — is what AEOS governs.
+- **Not aspirational.** Current state must be an honest snapshot of reality, not an optimistic one. The system can only hill-climb if it knows where it actually is. Inflated current state assessments break the algorithm.
+
+---
+
+## Open Problems
+
+These topics are central to a complete implementation of AEOS and require further definition.
+
+**The Operational Graph.** The COO doesn't run The Algorithm in the abstract — it operates against a living map of all the company's work: every SOP, workflow, tool, decision point, and agent role. This graph is the substrate that makes gap analysis concrete and auditable. How this graph is represented, maintained, and traversed is an open design question.
+
+**Current State Data Sources.** The COO's current state assessment is only as good as the data feeding it. What constitutes "unified entity context"? What inputs — financial ledger, KPI dashboards, agent output logs, customer signals, SOP health — are required, and how are they kept current? This is the infrastructure layer beneath The Algorithm.
