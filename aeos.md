@@ -146,6 +146,25 @@ Specialist Agents (Task Workers)
 
 ---
 
+## ARCH — The Execution Engine
+
+AEOS defines what the business is trying to achieve and how to close the gap. **ARCH executes it.**
+
+[ARCH (Agent Runtime & Coordination Harness)](https://github.com/AppSecHQ/arch) is the multi-agent system that brings the AEOS stack to life. When the COO identifies a gap and writes a BRIEF.md, ARCH is what spawns the Archie session to execute it. Archie (the Lead Agent) reads the brief, proposes a team of specialist agents, and coordinates their work across isolated git worktrees via a local MCP message bus.
+
+```
+AEOS        →    defines the gap and the brief
+ARCH        →    spawns Archie and the agent team to close it
+Archie      →    decomposes the brief, coordinates agents, reports back
+Specialists →    execute the work in parallel, isolated worktrees
+```
+
+ARCH handles: dynamic team planning, user approval gates, agent-to-agent messaging, token/cost tracking, sandboxed execution, and a live terminal dashboard.
+
+AEOS is the strategy. ARCH is the runtime.
+
+---
+
 ## Open Problems
 
 These topics are central to a complete implementation of AEOS and require further definition.
