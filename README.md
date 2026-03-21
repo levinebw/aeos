@@ -55,7 +55,7 @@ The central influence. Miessler has been writing about AI-native business archit
 
 ### Andrej Karpathy
 
-Not primarily a business thinker, but his framing of "verifiable software" is the philosophical foundation. His core insight — *"you can't hill-climb if you don't have a thing to hill-climb against"* — explains why ideal state criteria must be discrete and boolean. Also coined "agentic engineering" (Feb 2026).
+His framing of "verifiable software" is the philosophical foundation. His core insight — *"you can't hill-climb if you don't have a thing to hill-climb against"* — explains why ideal state criteria must be discrete and boolean. Also coined "agentic engineering" (Feb 2026).
 
 ### Sam Altman
 
