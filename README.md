@@ -38,6 +38,40 @@ AEOS is the business's constitution. It defines **what the business is trying to
 
 AEOS is the strategy. **[ARCH](https://github.com/levinebw/arch)** is the runtime that executes it — a multi-agent system that spawns Archie and specialist agents to close the gaps AEOS identifies.
 
+```mermaid
+graph TD
+    CEO["👤 CEO (Human)"]
+    AEOS["📜 AEOS"]
+    COO["🤖 COO Agent"]
+    ARCH["⚙️ ARCH Runtime"]
+    Archie["🧑‍💼 Archie (Lead Agent)"]
+    S1["🔧 Specialist"]
+    S2["🔧 Specialist"]
+    S3["🔧 Specialist"]
+    SVC["🔁 Service Agent (tbd)"]
+
+    CEO -- "sets vision, approves strategy" --> AEOS
+    AEOS -- "ideal state + current state + rules" --> COO
+    COO -- "identifies gaps, writes BRIEF.md" --> ARCH
+    ARCH -- "spawns session" --> Archie
+    Archie -- "decomposes brief, coordinates" --> S1 & S2 & S3
+    S1 & S2 & S3 -- "report completion" --> Archie
+    Archie -- "delivers results" --> COO
+    COO -- "verifies against ideal state" --> AEOS
+    COO -- "escalates decisions" --> CEO
+    AEOS -. "SOPs (future)" .-> SVC
+
+    style AEOS fill:#1a1a2e,stroke:#e94560,color:#fff
+    style ARCH fill:#1a1a2e,stroke:#0f3460,color:#fff
+    style COO fill:#16213e,stroke:#e94560,color:#fff
+    style Archie fill:#16213e,stroke:#0f3460,color:#fff
+    style CEO fill:#0f3460,stroke:#e94560,color:#fff
+    style S1 fill:#1a1a2e,stroke:#533483,color:#fff
+    style S2 fill:#1a1a2e,stroke:#533483,color:#fff
+    style S3 fill:#1a1a2e,stroke:#533483,color:#fff
+    style SVC fill:#1a1a2e,stroke:#533483,color:#fff,stroke-dasharray: 5 5
+```
+
 ---
 
 ## Intellectual Lineage
