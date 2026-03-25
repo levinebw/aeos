@@ -34,6 +34,24 @@ AEOS is the business's constitution. It defines **what the business is trying to
 
 **[→ AEOS-TEMPLATE.md](https://github.com/levinebw/aeos/blob/main/AEOS-TEMPLATE.md)** — blank template to instantiate AEOS for your own enterprise.
 
+## COO Agent
+
+The generic COO Agent persona and core skills ship with the framework. Each AEOS instance inherits and extends them for its specific business.
+
+**[→ COO Persona](personas/coo/COO.md)** — the COO's identity, constitutional principles, startup sequence, and weekly report format.
+
+**Core Skills:**
+
+| Skill | Description |
+|-------|-------------|
+| [assess-current-state](skills/assess-current-state/SKILL.md) | Evaluate the business against ideal state criteria |
+| [identify-gaps](skills/identify-gaps/SKILL.md) | Prioritize the delta between ideal and current state |
+| [write-brief](skills/write-brief/SKILL.md) | Create a scoped BRIEF.md for an Archie session |
+| [weekly-status-report](skills/weekly-status-report/SKILL.md) | Produce the CEO's weekly status report |
+| [budget-tracking](skills/budget-tracking/SKILL.md) | Maintain the financial ledger and flag budget risks |
+
+Business-specific skills (marketing, fulfillment, product, etc.) are defined in each AEOS instance, not in the framework.
+
 ## Execution Engine
 
 AEOS is the strategy. **[ARCH](https://github.com/levinebw/arch)** is the runtime that executes it — a multi-agent system that spawns Archie and specialist agents to close the gaps AEOS identifies.
